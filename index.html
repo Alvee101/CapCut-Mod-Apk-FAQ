@@ -1,0 +1,685 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>CapCut Mod - FAQ | Frequently Asked Questions</title>
+<meta name="description" content="Frequently asked questions about CapCut Mod APK - VPN usage, features, premium unlock, and more.">
+<style>
+  * {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+  }
+
+  body {
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    background: linear-gradient(135deg, #0f0c29 0%, #302b63 50%, #24243e 100%);
+    color: #fff;
+    min-height: 100vh;
+    line-height: 1.6;
+  }
+
+  .container {
+    max-width: 900px;
+    margin: 0 auto;
+    padding: 40px 20px;
+  }
+
+  header {
+    text-align: center;
+    margin-bottom: 50px;
+    padding: 30px 20px;
+    background: rgba(255, 255, 255, 0.05);
+    border-radius: 20px;
+    backdrop-filter: blur(10px);
+    border: 1px solid rgba(255, 255, 255, 0.1);
+  }
+
+  .header-title {
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    gap: 14px;
+    margin-bottom: 15px;
+  }
+
+  .header-title svg {
+    width: 40px;
+    height: 40px;
+    stroke: #00f5a0;
+    flex-shrink: 0;
+  }
+
+  header h1 {
+    font-size: 3.2rem;
+    background: linear-gradient(90deg, #00f5a0, #00d9f5);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    background-clip: text;
+    line-height: 1.2;
+    margin-bottom: 20px;
+  }
+
+  header p {
+    font-size: 1.1rem;
+    color: #c5c5d6;
+    max-width: 600px;
+    margin: 0 auto;
+  }
+
+  .badge {
+    display: inline-block;
+    padding: 6px 16px;
+    background: linear-gradient(90deg, #00f5a0, #00d9f5);
+    color: #0f0c29;
+    border-radius: 20px;
+    font-weight: 700;
+    font-size: 0.85rem;
+    margin-bottom: 20px;
+    letter-spacing: 1px;
+  }
+
+  .faq-section {
+    margin-bottom: 40px;
+  }
+
+  .faq-section h2 {
+    font-size: 1.5rem;
+    margin-bottom: 20px;
+    color: #00f5a0;
+    padding-left: 15px;
+    border-left: 4px solid #00f5a0;
+    display: flex;
+    align-items: center;
+    gap: 10px;
+  }
+
+  .faq-section h2 svg {
+    width: 22px;
+    height: 22px;
+    stroke: #00f5a0;
+    flex-shrink: 0;
+  }
+
+  .faq-item {
+    background: rgba(255, 255, 255, 0.04);
+    border: 1px solid rgba(255, 255, 255, 0.08);
+    border-radius: 12px;
+    margin-bottom: 12px;
+    overflow: hidden;
+    transition: all 0.3s ease;
+  }
+
+  .faq-item:hover {
+    background: rgba(255, 255, 255, 0.07);
+    border-color: rgba(0, 245, 160, 0.3);
+  }
+
+  .faq-question {
+    width: 100%;
+    text-align: left;
+    padding: 18px 22px;
+    background: transparent;
+    border: none;
+    color: #fff;
+    font-size: 1.05rem;
+    font-weight: 600;
+    cursor: pointer;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    gap: 15px;
+    font-family: inherit;
+  }
+
+  .faq-question:hover {
+    color: #00f5a0;
+  }
+
+  .faq-icon {
+    flex-shrink: 0;
+    width: 28px;
+    height: 28px;
+    border-radius: 50%;
+    background: rgba(0, 245, 160, 0.15);
+    color: #00f5a0;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    transition: transform 0.3s ease;
+  }
+
+  .faq-icon svg {
+    width: 14px;
+    height: 14px;
+    stroke: currentColor;
+    stroke-width: 2.5;
+    fill: none;
+  }
+
+  .faq-item.active .faq-icon {
+    transform: rotate(45deg);
+    background: #00f5a0;
+    color: #0f0c29;
+  }
+
+  .faq-answer {
+    max-height: 0;
+    overflow: hidden;
+    transition: max-height 0.25s ease, padding 0.25s ease;
+    padding: 0 22px;
+    color: #c5c5d6;
+  }
+
+  .faq-item.active .faq-answer {
+    max-height: 2000px;
+    padding: 0 22px 20px 22px;
+  }
+
+  .faq-answer p {
+    margin-bottom: 10px;
+  }
+
+  .faq-answer strong {
+    color: #00d9f5;
+  }
+
+  .warning-box,
+  .info-box,
+  .success-box {
+    display: flex;
+    align-items: flex-start;
+    gap: 10px;
+    padding: 12px 16px;
+    border-radius: 6px;
+    margin-top: 10px;
+    font-size: 0.95rem;
+  }
+
+  .warning-box svg,
+  .info-box svg,
+  .success-box svg {
+    width: 20px;
+    height: 20px;
+    flex-shrink: 0;
+    margin-top: 2px;
+    stroke-width: 2;
+    fill: none;
+  }
+
+  .warning-box {
+    background: rgba(255, 193, 7, 0.1);
+    border-left: 4px solid #ffc107;
+    color: #ffe69c;
+  }
+
+  .warning-box svg { stroke: #ffc107; }
+
+  .info-box {
+    background: rgba(0, 217, 245, 0.1);
+    border-left: 4px solid #00d9f5;
+    color: #b8ecff;
+  }
+
+  .info-box svg { stroke: #00d9f5; }
+
+  .success-box {
+    background: rgba(0, 245, 160, 0.1);
+    border-left: 4px solid #00f5a0;
+    color: #b8ffd9;
+  }
+
+  .success-box svg { stroke: #00f5a0; }
+
+  footer {
+    text-align: center;
+    margin-top: 60px;
+    padding: 30px 20px;
+    color: #8a8aa0;
+    font-size: 0.9rem;
+    border-top: 1px solid rgba(255, 255, 255, 0.1);
+  }
+
+  footer a {
+    color: #00f5a0;
+    text-decoration: none;
+  }
+
+  /* Floating Telegram Button - Left Side */
+  .telegram-float {
+    position: fixed;
+    bottom: 30px;
+    left: 30px;
+    width: 60px;
+    height: 60px;
+    background: linear-gradient(135deg, #229ED9, #2AABEE);
+    border-radius: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    box-shadow: 0 8px 24px rgba(42, 171, 238, 0.5);
+    cursor: pointer;
+    z-index: 1000;
+    transition: all 0.3s ease;
+    text-decoration: none;
+    animation: pulse 2s infinite;
+  }
+
+  .telegram-float:hover {
+    transform: scale(1.1) translateY(-3px);
+    box-shadow: 0 12px 30px rgba(42, 171, 238, 0.7);
+  }
+
+  .telegram-float svg {
+    width: 32px;
+    height: 32px;
+    fill: #fff;
+  }
+
+  .telegram-tooltip {
+    position: absolute;
+    left: 75px;
+    top: 50%;
+    transform: translateY(-50%);
+    background: #1a1a2e;
+    color: #fff;
+    padding: 8px 14px;
+    border-radius: 8px;
+    font-size: 0.85rem;
+    white-space: nowrap;
+    opacity: 0;
+    visibility: hidden;
+    transition: all 0.3s ease;
+    border: 1px solid rgba(0, 245, 160, 0.3);
+    font-weight: 600;
+  }
+
+  .telegram-tooltip::before {
+    content: '';
+    position: absolute;
+    left: -6px;
+    top: 50%;
+    transform: translateY(-50%);
+    border-top: 6px solid transparent;
+    border-bottom: 6px solid transparent;
+    border-right: 6px solid #1a1a2e;
+  }
+
+  .telegram-float:hover .telegram-tooltip {
+    opacity: 1;
+    visibility: visible;
+    left: 80px;
+  }
+
+  @keyframes pulse {
+    0%, 100% {
+      box-shadow: 0 8px 24px rgba(42, 171, 238, 0.5), 0 0 0 0 rgba(42, 171, 238, 0.5);
+    }
+    50% {
+      box-shadow: 0 8px 24px rgba(42, 171, 238, 0.5), 0 0 0 12px rgba(42, 171, 238, 0);
+    }
+  }
+
+  @media (max-width: 600px) {
+    header h1 { font-size: 1.8rem; }
+    .header-title svg { width: 32px; height: 32px; }
+    .faq-question { font-size: 0.95rem; padding: 15px 16px; }
+    .faq-section h2 { font-size: 1.25rem; }
+    .container { padding: 25px 15px; }
+    .telegram-float {
+      width: 52px;
+      height: 52px;
+      bottom: 20px;
+      left: 20px;
+    }
+    .telegram-float svg { width: 26px; height: 26px; }
+  }
+</style>
+</head>
+<body>
+
+<div class="container">
+
+  <header>
+    <span class="badge">CAPCUT MOD APK</span>
+    <h1>Frequently Asked Questions</h1>
+    <p>Everything you need to know about the CapCut Mod — VPN, features, premium unlock, and troubleshooting.</p>
+  </header>
+
+  <!-- SECTION 1: GENERAL -->
+  <div class="faq-section">
+    <h2>
+      <svg viewBox="0 0 24 24" fill="none" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+        <circle cx="12" cy="12" r="10"></circle>
+        <path d="M12 16v-4M12 8h.01"></path>
+      </svg>
+      General Questions
+    </h2>
+
+    <div class="faq-item">
+      <button class="faq-question" onclick="toggleFAQ(this)">
+        <span>What is CapCut Mod APK?</span>
+        <span class="faq-icon">
+          <svg viewBox="0 0 24 24" fill="none" stroke-linecap="round"><line x1="12" y1="5" x2="12" y2="19"></line><line x1="5" y1="12" x2="19" y2="12"></line></svg>
+        </span>
+      </button>
+      <div class="faq-answer">
+        <p>CapCut Mod APK is a modified version of the original CapCut video editor that unlocks <strong>Pro features</strong> like premium effects, filters, no watermark export, and access in restricted regions — without a paid subscription.</p>
+      </div>
+    </div>
+
+    <div class="faq-item">
+      <button class="faq-question" onclick="toggleFAQ(this)">
+        <span>Is CapCut Mod APK safe to use?</span>
+        <span class="faq-icon">
+          <svg viewBox="0 0 24 24" fill="none" stroke-linecap="round"><line x1="12" y1="5" x2="12" y2="19"></line><line x1="5" y1="12" x2="19" y2="12"></line></svg>
+        </span>
+      </button>
+      <div class="faq-answer">
+        <p>Yes — it's modded &amp; released by <strong>AlveeMods</strong>. Every release is tested and verified by us before it goes live.</p>
+        <div class="info-box">
+          <svg viewBox="0 0 24 24"><circle cx="12" cy="12" r="10"></circle><path d="M12 16v-4M12 8h.01"></path></svg>
+          <span>Only download from the official <a href="https://t.me/AlveeMods" target="_blank" rel="noopener" style="color:#00f5a0;font-weight:700;">AlveeMods Telegram channel</a> — third-party sources may distribute fake or infected copies.</span>
+        </div>
+      </div>
+    </div>
+
+    <div class="faq-item">
+      <button class="faq-question" onclick="toggleFAQ(this)">
+        <span>Can I log in to my CapCut account in the mod?</span>
+        <span class="faq-icon">
+          <svg viewBox="0 0 24 24" fill="none" stroke-linecap="round"><line x1="12" y1="5" x2="12" y2="19"></line><line x1="5" y1="12" x2="19" y2="12"></line></svg>
+        </span>
+      </button>
+      <div class="faq-answer">
+        <p>Yes, you can — but it is <strong>not recommended</strong> to use your main account. Here's why: CapCut's servers can detect unusual activity tied to a modded client and may flag or ban the account.</p>
+        <div class="warning-box">
+          <svg viewBox="0 0 24 24"><path d="M10.29 3.86 1.82 18a2 2 0 0 0 1.71 3h16.94a2 2 0 0 0 1.71-3L13.71 3.86a2 2 0 0 0-3.42 0z"></path><line x1="12" y1="9" x2="12" y2="13"></line><line x1="12" y1="17" x2="12.01" y2="17"></line></svg>
+          <span>If login is necessary, create a <strong>temporary account using a disposable email</strong> (e.g. <strong>temp-mail.org</strong>) instead of linking your real Google or TikTok account. This keeps your main account safe.</span>
+        </div>
+      </div>
+    </div>
+
+    <div class="faq-item">
+      <button class="faq-question" onclick="toggleFAQ(this)">
+        <span>Do I need to uninstall the original CapCut first?</span>
+        <span class="faq-icon">
+          <svg viewBox="0 0 24 24" fill="none" stroke-linecap="round"><line x1="12" y1="5" x2="12" y2="19"></line><line x1="5" y1="12" x2="19" y2="12"></line></svg>
+        </span>
+      </button>
+      <div class="faq-answer">
+        <p>Yes. Since the mod uses the same package name, you must <strong>uninstall the official CapCut</strong> before installing the mod. Back up your projects first if you have any.</p>
+      </div>
+    </div>
+  </div>
+
+  <!-- SECTION 2: VPN & REGION -->
+  <div class="faq-section">
+    <h2>
+      <svg viewBox="0 0 24 24" fill="none" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+        <circle cx="12" cy="12" r="10"></circle>
+        <line x1="2" y1="12" x2="22" y2="12"></line>
+        <path d="M12 2a15.3 15.3 0 0 1 4 10 15.3 15.3 0 0 1-4 10 15.3 15.3 0 0 1-4-10 15.3 15.3 0 0 1 4-10z"></path>
+      </svg>
+      VPN & Banned Countries
+    </h2>
+
+    <div class="faq-item">
+      <button class="faq-question" onclick="toggleFAQ(this)">
+        <span>Do I need a VPN to use CapCut Mod?</span>
+        <span class="faq-icon">
+          <svg viewBox="0 0 24 24" fill="none" stroke-linecap="round"><line x1="12" y1="5" x2="12" y2="19"></line><line x1="5" y1="12" x2="19" y2="12"></line></svg>
+        </span>
+      </button>
+      <div class="faq-answer">
+        <p>It depends on your country:</p>
+        <p>• If CapCut is <strong>available in your region</strong> (most countries) — no VPN needed.</p>
+        <p>• If you're in a <strong>banned country</strong> (e.g., India, or regions where CapCut is restricted) — you'll need a VPN to bypass the regional block.</p>
+        <div class="warning-box">
+          <svg viewBox="0 0 24 24"><path d="M10.29 3.86 1.82 18a2 2 0 0 0 1.71 3h16.94a2 2 0 0 0 1.71-3L13.71 3.86a2 2 0 0 0-3.42 0z"></path><line x1="12" y1="9" x2="12" y2="13"></line><line x1="12" y1="17" x2="12.01" y2="17"></line></svg>
+          <span>Use the VPN <strong>only during first launch / sign-in</strong>. After that you can usually turn it off.</span>
+        </div>
+      </div>
+    </div>
+
+    <div class="faq-item">
+      <button class="faq-question" onclick="toggleFAQ(this)">
+        <span>Which VPN should I use?</span>
+        <span class="faq-icon">
+          <svg viewBox="0 0 24 24" fill="none" stroke-linecap="round"><line x1="12" y1="5" x2="12" y2="19"></line><line x1="5" y1="12" x2="19" y2="12"></line></svg>
+        </span>
+      </button>
+      <div class="faq-answer">
+        <p>Any reliable free or paid VPN works. Recommended free options: <strong>1.1.1.1 (Cloudflare WARP)</strong>, <strong>Proton VPN</strong>, or <strong>Turbo VPN</strong>. Connect to a server in <strong>Singapore, USA, or UK</strong> for best results.</p>
+      </div>
+    </div>
+
+    <div class="faq-item">
+      <button class="faq-question" onclick="toggleFAQ(this)">
+        <span>App says "Not available in your region" even with VPN — what to do?</span>
+        <span class="faq-icon">
+          <svg viewBox="0 0 24 24" fill="none" stroke-linecap="round"><line x1="12" y1="5" x2="12" y2="19"></line><line x1="5" y1="12" x2="19" y2="12"></line></svg>
+        </span>
+      </button>
+      <div class="faq-answer">
+        <p>Try these steps in order:</p>
+        <p>1. Force stop CapCut and clear its cache.</p>
+        <p>2. Connect VPN <strong>before</strong> opening the app.</p>
+        <p>3. Switch to a different server (try Singapore or US).</p>
+        <p>4. Make sure your device language/region is set to a supported one.</p>
+      </div>
+    </div>
+  </div>
+
+  <!-- SECTION 3: FEATURES -->
+  <div class="faq-section">
+    <h2>
+      <svg viewBox="0 0 24 24" fill="none" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+        <polygon points="12 2 15.09 8.26 22 9.27 17 14.14 18.18 21.02 12 17.77 5.82 21.02 7 14.14 2 9.27 8.91 8.26 12 2"></polygon>
+      </svg>
+      Features & Premium Unlock
+    </h2>
+
+    <div class="faq-item">
+      <button class="faq-question" onclick="toggleFAQ(this)">
+        <span>Will all Pro features work in the mod?</span>
+        <span class="faq-icon">
+          <svg viewBox="0 0 24 24" fill="none" stroke-linecap="round"><line x1="12" y1="5" x2="12" y2="19"></line><line x1="5" y1="12" x2="19" y2="12"></line></svg>
+        </span>
+      </button>
+      <div class="faq-answer">
+        <p>Not 100%. Only <strong>client-side features</strong> (things processed on your device) can be unlocked — like premium effects, filters, stickers, fonts, no-watermark export, and overlays.</p>
+        <div class="warning-box">
+          <svg viewBox="0 0 24 24"><path d="M10.29 3.86 1.82 18a2 2 0 0 0 1.71 3h16.94a2 2 0 0 0 1.71-3L13.71 3.86a2 2 0 0 0-3.42 0z"></path><line x1="12" y1="9" x2="12" y2="13"></line><line x1="12" y1="17" x2="12.01" y2="17"></line></svg>
+          <span><strong>Server-side features</strong> like AI tools (auto-cut, AI portrait, background remover, voice changer, AI script, etc.) <strong>cannot be unlocked</strong> — they're processed on CapCut's servers and require a real subscription.</span>
+        </div>
+      </div>
+    </div>
+
+    <div class="faq-item">
+      <button class="faq-question" onclick="toggleFAQ(this)">
+        <span>Why do AI features show "Pro" or error even in the mod?</span>
+        <span class="faq-icon">
+          <svg viewBox="0 0 24 24" fill="none" stroke-linecap="round"><line x1="12" y1="5" x2="12" y2="19"></line><line x1="5" y1="12" x2="19" y2="12"></line></svg>
+        </span>
+      </button>
+      <div class="faq-answer">
+        <p>Because those features are <strong>processed on CapCut's servers</strong>, not on your phone. The server checks your real account subscription before responding — so no mod can bypass it. This is a hard limit, not a bug.</p>
+      </div>
+    </div>
+
+    <div class="faq-item">
+      <button class="faq-question" onclick="toggleFAQ(this)">
+        <span>Is there a watermark on exported videos?</span>
+        <span class="faq-icon">
+          <svg viewBox="0 0 24 24" fill="none" stroke-linecap="round"><line x1="12" y1="5" x2="12" y2="19"></line><line x1="5" y1="12" x2="19" y2="12"></line></svg>
+        </span>
+      </button>
+      <div class="faq-answer">
+        <p>No. The mod removes the default CapCut watermark from the end of exported videos automatically.</p>
+      </div>
+    </div>
+
+    <div class="faq-item">
+      <button class="faq-question" onclick="toggleFAQ(this)">
+        <span>Can I use premium templates from the community?</span>
+        <span class="faq-icon">
+          <svg viewBox="0 0 24 24" fill="none" stroke-linecap="round"><line x1="12" y1="5" x2="12" y2="19"></line><line x1="5" y1="12" x2="19" y2="12"></line></svg>
+        </span>
+      </button>
+      <div class="faq-answer">
+        <p>Yes — most community templates work fine since they rely on client-side effects. But templates that use <strong>AI-powered elements</strong> (auto-caption, AI portrait, etc.) may fail because those need a real Pro account.</p>
+      </div>
+    </div>
+  </div>
+
+  <!-- SECTION 4: INSTALLATION & UPDATES -->
+  <div class="faq-section">
+    <h2>
+      <svg viewBox="0 0 24 24" fill="none" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+        <path d="M21 15v4a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2v-4"></path>
+        <polyline points="7 10 12 15 17 10"></polyline>
+        <line x1="12" y1="15" x2="12" y2="3"></line>
+      </svg>
+      Installation & Updates
+    </h2>
+
+    <div class="faq-item">
+      <button class="faq-question" onclick="toggleFAQ(this)">
+        <span>App keeps crashing on launch — how to fix?</span>
+        <span class="faq-icon">
+          <svg viewBox="0 0 24 24" fill="none" stroke-linecap="round"><line x1="12" y1="5" x2="12" y2="19"></line><line x1="5" y1="12" x2="19" y2="12"></line></svg>
+        </span>
+      </button>
+      <div class="faq-answer">
+        <p>Try these in order:</p>
+        <p>1. Uninstall any older CapCut / mod version completely.</p>
+        <p>2. Reboot your device.</p>
+        <p>3. Install fresh from our <a href="https://t.me/AlveeMods" target="_blank" rel="noopener" style="color:#00f5a0;font-weight:700;">Telegram channel</a>.</p>
+        <p>4. Disable battery optimization for CapCut.</p>
+        <p>5. Make sure you have at least 1GB free storage.</p>
+      </div>
+    </div>
+
+    <div class="faq-item">
+      <button class="faq-question" onclick="toggleFAQ(this)">
+        <span>Can I update the mod from Play Store?</span>
+        <span class="faq-icon">
+          <svg viewBox="0 0 24 24" fill="none" stroke-linecap="round"><line x1="12" y1="5" x2="12" y2="19"></line><line x1="5" y1="12" x2="19" y2="12"></line></svg>
+        </span>
+      </button>
+      <div class="faq-answer">
+        <p>No. Updating from Play Store will <strong>replace the mod with the official version</strong> and you'll lose all modded features. Always wait for the next mod release from our <a href="https://t.me/AlveeMods" target="_blank" rel="noopener" style="color:#00f5a0;font-weight:700;">Telegram channel</a>.</p>
+        <div class="warning-box">
+          <svg viewBox="0 0 24 24"><path d="M10.29 3.86 1.82 18a2 2 0 0 0 1.71 3h16.94a2 2 0 0 0 1.71-3L13.71 3.86a2 2 0 0 0-3.42 0z"></path><line x1="12" y1="9" x2="12" y2="13"></line><line x1="12" y1="17" x2="12.01" y2="17"></line></svg>
+          <span>Disable auto-update for CapCut in your Play Store settings.</span>
+        </div>
+      </div>
+    </div>
+
+    <div class="faq-item">
+      <button class="faq-question" onclick="toggleFAQ(this)">
+        <span>How often is the mod updated?</span>
+        <span class="faq-icon">
+          <svg viewBox="0 0 24 24" fill="none" stroke-linecap="round"><line x1="12" y1="5" x2="12" y2="19"></line><line x1="5" y1="12" x2="19" y2="12"></line></svg>
+        </span>
+      </button>
+      <div class="faq-answer">
+        <p>We push a new build whenever CapCut releases a major update or when a critical fix is needed. Join our <a href="https://t.me/AlveeMods" target="_blank" rel="noopener" style="color:#00f5a0;font-weight:700;">Telegram channel</a> to get notified instantly.</p>
+        <div class="success-box">
+          <svg viewBox="0 0 24 24"><polyline points="20 6 9 17 4 12"></polyline></svg>
+          <span>Tap the floating Telegram icon on the left to join.</span>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <!-- SECTION 5: ACCOUNT & SAFETY -->
+  <div class="faq-section">
+    <h2>
+      <svg viewBox="0 0 24 24" fill="none" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+        <path d="M12 22s8-4 8-10V5l-8-3-8 3v7c0 6 8 10 8 10z"></path>
+      </svg>
+      Account & Safety
+    </h2>
+
+    <div class="faq-item">
+      <button class="faq-question" onclick="toggleFAQ(this)">
+        <span>Can my CapCut account get banned for using the mod?</span>
+        <span class="faq-icon">
+          <svg viewBox="0 0 24 24" fill="none" stroke-linecap="round"><line x1="12" y1="5" x2="12" y2="19"></line><line x1="5" y1="12" x2="19" y2="12"></line></svg>
+        </span>
+      </button>
+      <div class="faq-answer">
+        <p>The risk is low because the mod mostly affects client-side behavior, but it's <strong>never zero</strong>. To stay safe:</p>
+        <p>• Use a <strong>secondary account</strong>, not your main one.</p>
+        <p>• Don't try to abuse server-side AI features.</p>
+        <p>• Avoid linking payment methods inside the mod.</p>
+      </div>
+    </div>
+
+    <div class="faq-item">
+      <button class="faq-question" onclick="toggleFAQ(this)">
+        <span>Do I need to sign in to use the mod?</span>
+        <span class="faq-icon">
+          <svg viewBox="0 0 24 24" fill="none" stroke-linecap="round"><line x1="12" y1="5" x2="12" y2="19"></line><line x1="5" y1="12" x2="19" y2="12"></line></svg>
+        </span>
+      </button>
+      <div class="faq-answer">
+        <p>Not for basic editing — you can use all mod features without an account. But signing in lets you sync projects, use the template library, and access cloud features.</p>
+        <div class="warning-box">
+          <svg viewBox="0 0 24 24"><path d="M10.29 3.86 1.82 18a2 2 0 0 0 1.71 3h16.94a2 2 0 0 0 1.71-3L13.71 3.86a2 2 0 0 0-3.42 0z"></path><line x1="12" y1="9" x2="12" y2="13"></line><line x1="12" y1="17" x2="12.01" y2="17"></line></svg>
+          <span>Note: Google account login is <strong>not supported</strong> in the mod — you can only sign in using an <strong>email account</strong>. If you need to log in, use a separate email address, not your personal one.</span>
+        </div>
+      </div>
+    </div>
+
+    <div class="faq-item">
+      <button class="faq-question" onclick="toggleFAQ(this)">
+        <span>Will using the mod affect my original CapCut projects or data?</span>
+        <span class="faq-icon">
+          <svg viewBox="0 0 24 24" fill="none" stroke-linecap="round"><line x1="12" y1="5" x2="12" y2="19"></line><line x1="5" y1="12" x2="19" y2="12"></line></svg>
+        </span>
+      </button>
+      <div class="faq-answer">
+        <p>Since the mod uses the same package name as the original CapCut, they <strong>cannot be installed at the same time</strong>. You'll need to uninstall the official version first, which means any locally stored projects may be lost.</p>
+        <div class="warning-box">
+          <svg viewBox="0 0 24 24"><path d="M10.29 3.86 1.82 18a2 2 0 0 0 1.71 3h16.94a2 2 0 0 0 1.71-3L13.71 3.86a2 2 0 0 0-3.42 0z"></path><line x1="12" y1="9" x2="12" y2="13"></line><line x1="12" y1="17" x2="12.01" y2="17"></line></svg>
+          <span><strong>Back up your projects before uninstalling</strong> the original app. Cloud-synced projects are generally safe if you're logged in.</span>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <footer>
+    <p>© <a href="https://t.me/AlveeMods" target="_blank" rel="noopener">AlveeMods</a></p>
+  </footer>
+
+</div>
+
+<!-- Floating Telegram Button (Left Side) -->
+<a href="https://t.me/AlveeMods" target="_blank" rel="noopener" class="telegram-float" aria-label="Join our Telegram">
+  <svg viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
+    <path d="M21.426 2.574a1.5 1.5 0 0 0-1.57-.232L2.49 9.58a1.2 1.2 0 0 0 .066 2.236l3.9 1.34 2.21 6.99a1.05 1.05 0 0 0 1.74.44l2.66-2.55 4.31 3.17a1.2 1.2 0 0 0 1.88-.72l3.2-15.36a1.5 1.5 0 0 0-.03-.55zM9.7 14.62l-.42 4.18-1.62-5.1 9.86-6.13-7.82 7.05z"/>
+  </svg>
+  <span class="telegram-tooltip">Join us on Telegram</span>
+</a>
+
+<script>
+  function toggleFAQ(btn) {
+    const item = btn.parentElement;
+    const wasActive = item.classList.contains('active');
+
+    // Close all
+    document.querySelectorAll('.faq-item.active').forEach(el => el.classList.remove('active'));
+
+    // Open clicked one if it wasn't already open
+    if (!wasActive) {
+      item.classList.add('active');
+    }
+  }
+</script>
+
+</body>
+</html>
